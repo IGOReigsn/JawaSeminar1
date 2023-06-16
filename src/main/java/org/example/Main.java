@@ -1,5 +1,14 @@
-package org.example;
 
+/*      1. Выбросить случайное целое число в диапазоне от 0 до 2000 и сохранить в i
+        2. Посчитать и сохранить в n номер старшего значащего бита выпавшего числа
+        3. Найти все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранить в массив m1
+        4. Найти все некратные n числа в диапазоне от Short.MIN_VALUE до i и сохранить в массив m2
+
+        Пункты реализовать в методе main
+        *Пункты реализовать в разных методах
+
+        int i = new Random().nextInt(k); //это кидалка случайных чисел!)*/
+/*
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -18,16 +27,30 @@ public class Main {
     }
 }
 
-
+*/
 //------------------------------------------------------------------------------JJHH
-/*
+package org.example;
 import java.util.Random;
         import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
 
+        int i = new Random().nextInt(2000);
+        System.out.println("1. Случайное число:"+i);
+        System.out.println("    В двоичном коде:"+Integer.toBinaryString(i));
+        Integer n= Integer.toBinaryString(i).length();
+        System.out.println("2.Номер старшего значащего бита:"+n);
+        Scanner in = new Scanner(System.in);
+        System.out.print("MAX_VALUE: ");
+        Short max_value = in.nextShort();
+        System.out.print("MIN_VALUE: ");
+        Short min_value = in.nextShort();
+        //System.out.println(max_value+"  "+min_value);
+
+
+    }
+/*
         int i = 't';
         float f = .543f;
         long l;
@@ -69,5 +92,5 @@ public class Main {
 
 
     }
-
-}*/
+*/
+}
