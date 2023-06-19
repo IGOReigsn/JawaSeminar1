@@ -11,7 +11,7 @@
 //------------------------------------------------------------------------------JJHH
 package org.example;
 import java.util.Random;
-        import java.util.Scanner;
+        //import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class Main {
                 System.out.print(j + " ");
             }
         }
-        System.out.println("");
+        System.out.println();
         // Task4
         System.out.println("Task4");
         int tmp=(Short.MIN_VALUE - i);
@@ -49,6 +49,6 @@ public class Main {
             }
 
         }
-        System.out.println("");
+        System.out.println();
     }
 }
